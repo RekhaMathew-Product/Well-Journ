@@ -124,25 +124,48 @@ const steps = [
           }
         </Grid>
       </div>
-
-      <div class="cta">
-        <CallToAction href="/work/">
-          View All
-          <Icon icon="arrow-right" size="1.2em" />
-        </CallToAction>
-      </div>
     </section>
+    <div class="cta">
+      <CallToAction href="/work/">
+        View All
+        <Icon icon="arrow-right" size="1.2em" />
+      </CallToAction>
+    </div>
 
-    <section class="section with-background bg-variant">
-      <header class="section-header stack gap-2 lg:gap-4">
-        <h3>How It Works ?</h3>
-        <!-- <p>
+    <h2>How It Works?</h2>
+    <!-- <section class="section with-background bg-variant"> -->
+    <header class="section-header lg:gap-1">
+      <img
+        width="400"
+        height="400"
+        src="/assets/Step1.png"
+        alt="Jeanine White at work with a colleague"
+      />
+      <img
+        width="400"
+        height="400"
+        src="/assets/Step2.png"
+        alt="Jeanine White at work with a colleague"
+      />
+      <img
+        width="400"
+        height="400"
+        src="/assets/Step3.png"
+        alt="Jeanine White at work with a colleague"
+      />
+    </header>
+    <br />
+    <br />
+    <!-- </section> -->
+  </main>
+  <!-- <p>
           I have been fortunate enough to receive praise for my work in several
           publications. Take a look below to learn more.
         </p> -->
-      </header>
+  <ContactCTA />
+</BaseLayout>
 
-      <div class="gallery">
+<!-- <div class="gallery">
         <Grid variant="small">
           {
             [
@@ -156,14 +179,7 @@ const steps = [
             ))
           }
         </Grid>
-      </div>
-    </section>
-  </main>
-  <br />
-  <br />
-
-  <ContactCTA />
-</BaseLayout>
+      </div> -->
 
 <style>
   .hero {
@@ -247,12 +263,22 @@ const steps = [
     max-width: 50ch;
     font-size: var(--text-md);
     color: var(--gray-300);
+    display: flex;
+  }
+
+  .section-header2 {
+    justify-self: center;
+    text-align: center;
+    max-width: 50ch;
+    font-size: var(--text-md);
+    color: var(--gray-300);
+    display: flex;
+    flex-direction: row; /* Aligns items in a horizontal row */
   }
 
   .section-header h3 {
     font-size: var(--text-2xl);
   }
-
   .container {
     /* parent element of h3 */
     text-align: center;
